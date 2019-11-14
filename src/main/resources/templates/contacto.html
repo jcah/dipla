@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<head>
+<title>D´VILLALPANDO | Buzon</title>
+<!-- Required meta tags always come first -->
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<!-- Cargando fuentes-->
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic'
+	rel='stylesheet' type='text/css'>
+
+<!-- Cargando iconos -->
+<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+
+<!-- Carga de archivos css -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="paginas-internas">
+
+
+
+	<section class="bienvenidos">
+
+		<header class="encabezado navbar-fixed-top" role="banner"
+			id="encabezado">
+			<div class="container">
+				<a th:href="@{/}" class="logo"> <img src="images/logo.svg"
+					alt="Logo del sitio">
+				</a>
+				<nav id="menu-principal" class="collapse">
+					<ul>
+						<li><a th:href="@{/}">Inicio</a></li>
+						<li><a th:href="@{/nosotros}">Nosotros</a></li>
+						<li><a th:href="@{/cumple}">Cumpleaños</a></li>
+						<li><a th:href="@{/directorio}">Directorio</a></li>
+						<li><a th:href="@{/viernes}">Premio Semanal</a></li>
+						<li class="active"><a th:href="@{/contacto}">Buzon de
+								Sugerencias</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+
+
+		<div class="texto-encabezado text-xs-center"></div>
+
+		<div class="flecha-bajar text-xs-center">
+			<a data-scroll href="#agencia"> <i class="fa fa-angle-down"
+				aria-hidden="true"></i></a>
+		</div>
+
+
+	</section>
+
+	<div class="texto-encabezado text-xs-center"></div>
+	<div class="flecha-bajar text-xs-center">
+		<a data-scroll href="#agencia"> <i class="fa fa-angle-down"
+			aria-hidden="true"></i></a>
+	</div>
+
+	<main>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-8">
+					<br> <br>
+					<h2 class="m-b-2 text-center">Formulario de contacto</h2>
+
+					<hr>
+
+					<form action="#">
+
+						<div class="form-group row">
+							<label for="nombre" class="col-md-4 col-form-label">Nombre</label>
+
+							<div class="col-md-8">
+								<input class="form-control" type="text" id="nombre"
+									name="nombre" placeholder="Ingrese su nombre"
+									data-toggle="tooltip" data-placement="top"
+									title="Ingrese su nombre completo">
+							</div>
+						</div>
+
+
+						<div class="form-group row">
+							<label for="email" class="col-md-4 col-form-label">Email</label>
+
+							<div class="col-md-8">
+								<input class="form-control" type="text" id="email" name="email"
+									placeholder="Ingrese su email" data-toggle="tooltip"
+									data-placement="top" title="Ingrese su email">
+							</div>
+						</div>
+
+
+						<div class="form-group row">
+							<label for="mensaje" class="col-md-4 col-form-label">Mensaje</label>
+
+							<div class="col-md-8">
+								<textarea class="form-control" rows="5" id="mensaje"
+									name="mensaje" placeholder="Ingrese su mensaje"
+									data-toggle="tooltip" data-placement="top"
+									title="Ingrese un mensaje"></textarea>
+
+							</div>
+						</div>
+
+
+						<div class="form-group row">
+							<div class="col-md-8 offset-md-4">
+								<button type="submit" class="btn btn-primary">Enviar</button>
+								<button type="reset" class="btn btn-secondary">Limpiar</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div class="col-md-4">
+					<br> <br> <img class="img-thumbnail"
+						src="images/sugerencias.jpg" alt="imagen del contacto"
+						height="350px"></img>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+	
+
+
+	<a data-scroll class="ir-arriba" href="#encabezado"><i
+		class="fa  fa-arrow-circle-up" aria-hidden="true"> </i> </a>
+
+	<footer th:insert="fragments/footer :: pie-pagina"></footer>
+
+	<!-- Carga de archivos  JS -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/smooth-scroll.min.js"></script>
+	<script src="js/sitio.js"></script>
+
+</body>
+
+</html>
