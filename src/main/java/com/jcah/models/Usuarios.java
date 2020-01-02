@@ -2,21 +2,47 @@ package com.jcah.models;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.validation.constraints.Email;
 
+@Entity
+@Table(name = "usuarios")
+public class Usuarios {
 
-public class Usuaios {
-
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+
 	private String codigo;
+
 	private String nombre;
+
 	private String apellido_paterno;
+
 	private String apellido_materno;
+
+	@Email
 	private String correo;
+
 	private String foto;
+
+	@Temporal(TemporalType.DATE)
+	@Column(name = "nacimiento")
 	private Date fecha_nacimiento;
+
+	@Temporal(TemporalType.TIME)
+	@Column(name = "ingreso")
 	private Date fecha_ingreso;
+
 	private String telefono;
+
 	private String extension;
 
 	public Integer getId() {

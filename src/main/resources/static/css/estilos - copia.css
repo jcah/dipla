@@ -365,7 +365,7 @@ body {
     margin: .3rem 0
 }
 
-.ultimos-proyectos .owl-prev,
+/*.ultimos-proyectos .owl-prev,
 .ultimos-proyectos .owl-next {
     font-size: 3rem;
     margin: 0 .5rem;
@@ -378,6 +378,8 @@ body {
 .ultimos-proyectos .owl-next:hover {
     color: #009500
 }
+
+*/
 
 .piedepagina {
     background: #111;

@@ -8,15 +8,18 @@ body {
     color: #111111;
 }
 
+
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
+	
+    height: 600px;
+    width: 600px;
     outline: black;
     background-color: rgba(0, 0, 0, 0.3);
     background-size: 100%, 100%;
     border-radius: 50%;
     border: 1px solid black
 }
+
 
 .bienvenidos {
     background: url("../images/fondo-encabezado.jpg") no-repeat center top;
@@ -412,7 +415,7 @@ SECCION ├ÜLTIMOS PROYECTOS
 
 .ultimos-proyectos .owl-prev:hover,
 .ultimos-proyectos .owl-next:hover {
-    color: #009500;
+    color: #5c0a33;
 }
 
 
