@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.constraints.Email;
 
 @Entity
@@ -44,6 +45,23 @@ public class Usuarios {
 	private String telefono;
 
 	private String extension;
+	 
+	@Transient  // ignorar este atributo durante la persistencia 
+	private Areas areas;
+	
+	
+	public Areas getAreas() {
+		return areas;
+	}
+
+	public void setAreas(Areas areas) {
+		this.areas = areas;
+	}
+
+	
+	
+	
+	
 
 	public Integer getId() {
 		return id;
